@@ -1,0 +1,48 @@
+<section class="shophia-breadcromb-area section_50">
+    <div class="breadcromb-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcromb">
+                    <h2>login page</h2>
+                    <ul>
+                        <li><a href="index-2.html">home</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                        <li>Edit    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="shophia-login-page-area section_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="login-page-box">
+                    <div class="login-page-heading">
+                        <i class="fa fa-key"></i>
+                        <h3>Edit</h3>
+                    </div>
+                    <form [formGroup]="formGroup" (ngSubmit)="onSubmitForm()">
+                        <div class="account-form-group">
+                            <input type="text" placeholder="Username" name="username" formControlName="username" >
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="account-form-group">
+                            <input type="email" placeholder="Email Address" formControlName="emailAddress">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="account-form-group">
+                            <input type="password" placeholder="Password" formControlName="ConfirmPassword" >
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <p>
+                            <button type="submit" >submit</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

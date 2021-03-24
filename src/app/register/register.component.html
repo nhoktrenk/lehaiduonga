@@ -1,0 +1,68 @@
+<section class="shophia-breadcromb-area section_50">
+    <div class="breadcromb-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcromb">
+                    <h2>register page</h2>
+                    <ul>
+                        <li><a href="index-2.html">home</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                        <li>register page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="shophia-login-page-area section_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="login-page-box">
+                    <div class="login-page-heading">
+                        <i class="fa fa-lock"></i>
+                        <h3>register</h3>
+                    </div>
+                    <form [formGroup] = "formGroup" (ngSubmit)="onSubmitForm()" (ngSubmit)="register()">                       
+                        <div class="account-form-group">
+                            <input type="text" placeholder="Username" name="username" formControlName = "username">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div *ngIf ="formGroup.get('username').invalid &&(formGroup.get('username').dirty || formGroup.get('username').touched)" >
+                            <label class="text-center" for="">tài khoản không được bỏ trống</label>
+                        </div>
+                        <div class="account-form-group">
+                            <input type="email" placeholder="Email Address" name="email" formControlName = "emailAddress">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div *ngIf ="formGroup.get('emailAddress').invalid &&(formGroup.get('emailAddress').dirty || formGroup.get('emailAddress').touched)" >
+                            <label class="text-center" for="">email không được bỏ trống</label>
+                        </div>
+                        <div class="account-form-group">
+                            <input type="password" placeholder="Confirm Password" name="email" formControlName = "ConfirmPassword">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <div *ngIf ="formGroup.get('ConfirmPassword').invalid &&(formGroup.get('ConfirmPassword').dirty || formGroup.get('ConfirmPassword').touched)" >
+                            <label class="text-center" for="">email không được bỏ trống</label>
+                        </div>
+                        <div class="remember">
+                            <label>
+                                <input name="remember" type="checkbox">
+                                 I agree the term’s & conditions
+                            </label>
+                        </div>
+                        <div class="submit-login">
+                            <button type="submit" >Register</button>
+                        </div>
+                    </form>
+                    <div class="login-sign-up">
+                        <a routerLink = "/login">back to login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- chi hien ra khi thanh phan input no ko hop le va nguoi ta da co tac dong den no roi  ma ko nhap thi no hien ra loi  -->

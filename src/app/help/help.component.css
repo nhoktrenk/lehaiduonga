@@ -1,0 +1,74 @@
+.shophia-faqs-area {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+.shophia-single-faqs {
+    margin-bottom: 25px;
+}
+.shophia-single-faqs:last-child{
+    margin-bottom: 0px;
+}
+.shophia-single-faqs i {
+    margin-right: 5px;
+}
+.shophia-single-faqs > h3 {
+    color: #303030;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.shophia-single-faqs > p {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.shophia-faqs-right > h3{
+    color: #303030;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.shophia-faqs-right > form {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    margin-top: 30px;
+    padding: 30px 50px;
+}
+.shophia-faqs-right > form p {
+    margin-top: 15px;
+}
+.shophia-faqs-right > form label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.shophia-faqs-right > form textarea {
+    background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    height: 120px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.shophia-faqs-right > form input{
+    background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #333;
+    height: 40px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.shophia-faqs-right > form button {
+    background: #1abc9c none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.shophia-faqs-right > form button:hover{
+    background: #212121 none repeat scroll 0 0;
+}

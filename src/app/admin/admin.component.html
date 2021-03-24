@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Username</th>
+            <th scope="col">EmailAddress</th>
+            <th scope="col">ConfirmPassword</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let item of datas">
+            <th scope="row">{{item.Id}}</th>
+            <td> {{item.username}}</td>
+            <td>{{item.emailAddress}}</td>
+            <td>{{item.ConfirmPassword}}</td>
+            <td><a class="btn btn-danger" (click) = "deleteProduct(item.Id)">Delete</a></td>
+            <td><a class="btn btn-info" routerLink = "/edit/{{item.Id}}">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
